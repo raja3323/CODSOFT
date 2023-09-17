@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ecf0f3;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/Assets/BG.jpg') no-repeat;
+    background-size: cover;
+}
+
+
+.calculator{
+    background-color: rgb(29, 29, 29);
+    padding: 15px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 68px);
+}
+
+
+input{
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    border: none;
+    border-radius: 12px;
+    font-size: 50px;
+    text-align: end;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #323232;
+    color: white;
+}
+
+input::placeholder{
+    color: white;
+}
+
+
+
+button{
+    height: 48px;
+    width: 48px;
+    background-color: #ecf0f3;
+    border: none;
+    border-radius: 25%;
+    margin: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+.operator{
+    background-color: #F69906;
+}
+
+.operator i{
+    background-color: #F69906;
+    color: #fff;
+}
+
+
+.delete{
+    background-color: #A0A0A0;
+    color: black;
+}
+
+.oprands{
+    background-color: #323232;
+    color: #fff;
+}
+
+
+.equal{
+    width: 115px;
+    border-radius: 15px;
+}
+
+.equal i {
+    background-color: transparent;
+}
